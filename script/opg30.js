@@ -2,7 +2,7 @@
 
 {
     let playingClass = 'playing',
-        //Vi finder crash-ride id og tildeler den en variabel
+        //Vi finder crash id og tildeler den en variabel
         crash = document.querySelector('#crash');
 
     //en funktion der animere crash
@@ -16,9 +16,9 @@
         const keyCode = e.keyCode,
             //keyElement får nu den tilsvarende værdi som vi har tilføjet til vores data keys i html
             keyElement = document.querySelector(`div[data-key="${keyCode}"]`);
-        //Hvis ikke keyElement returnere true, skal dataen returneres true 
+        //Hvis keyElement returnere true, skal dataen returneres true 
         if (keyElement === true) return true;
-        //vi sørger for at lyden hører til det rigtige billede
+        //vi sørger for at lyden hører til den rigtige keyCode
         const audioElement = document.querySelector(`audio[data-key="${keyCode}"]`);
         //Lyden skal spille indenfor den den rigtige tidsramme
         audioElement.currentTime = 0;
