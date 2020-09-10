@@ -25,7 +25,7 @@ document.querySelectorAll(".div").forEach(divs => {
         case "Rip":
             break;
         case "Rap":
-            divs.style.color = "blue";
+            divs.style.color = "pink";
             break;
         case "Rup":
             divs.addEventListener("click", function () {
